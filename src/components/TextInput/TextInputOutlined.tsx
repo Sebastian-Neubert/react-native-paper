@@ -115,7 +115,7 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
     const fontScale = MAXIMIZED_LABEL_FONT_SIZE / fontSize;
 
     const labelWidth = parentState.labelLayout.width;
-    const labelHeight = parentState.labelLayout.height + 10;
+    const labelHeight = parentState.labelLayout.height;
     const labelHalfWidth = labelWidth / 2;
     const labelHalfHeight = labelHeight / 2;
 
@@ -142,7 +142,7 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
       labelHeight,
       height,
       minInputHeight
-    );
+    ) + 10;
 
     const topPosition = calculateLabelTopPosition(
       labelHeight,
